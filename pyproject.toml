@@ -1,0 +1,13 @@
+[project]
+name = "Experiments"
+version = "0.1.0"
+description = "MIPT student project: processor of experimental data"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pyqtgraph>=0.14.0",
+    "pyside6>=6.10.2",
+]
+
+[dependency-groups]
+dev = []
