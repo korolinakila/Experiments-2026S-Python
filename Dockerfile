@@ -26,8 +26,11 @@ RUN apt-get update && apt-get install -y \
     git \
     nano \
     vim \
+    curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
 
 # Set up working directory
 WORKDIR /app
